@@ -14,6 +14,7 @@ import java.util.List;
 @AllArgsConstructor
 public class SalesAgreementDetailsDTO {
 
+    private String id;
     private String agreementNo;
     private String agreementType;
     private String agreementName;

@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class SalesAgreementItemDTO {
 
+    private String id;
     private String productName;
     private String productOfferName;
     private String currencyCode;

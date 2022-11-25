@@ -13,6 +13,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class SalesAgreementDTO {
 
+    private String id;
     private String agreementNo;
     private String companyId;
     private String agreementType;

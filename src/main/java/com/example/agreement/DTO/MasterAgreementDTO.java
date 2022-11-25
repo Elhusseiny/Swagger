@@ -12,6 +12,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 public class MasterAgreementDTO {
+    private String id;
     private String agreementNo;
     private String companyId;
     private String agreementType;
