@@ -1,7 +1,6 @@
-package com.example.agreement.DTO;
+package com.example.agreement.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonProperty;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -13,23 +12,20 @@ import java.time.LocalDateTime;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class MasterAgreementDTO {
-    @JsonProperty("agreementId")
+public class MasterAgreement {
     private String id;
     private String agreementNo;
-    @JsonIgnore
     private String companyId;
     private String agreementType;
     private String agreementName;
-    private String status;
+    private String active;
     private LocalDateTime startDate;
     private LocalDateTime endDate;
     private String calendarType;
     private LocalDateTime effectiveDate;
     private Boolean valid;
     private String comment;
-    private String createdBy;
-    private String imageUrl;
+    private Person person ;
 
 
 }

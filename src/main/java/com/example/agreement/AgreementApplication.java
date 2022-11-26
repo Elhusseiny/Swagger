@@ -1,5 +1,6 @@
 package com.example.agreement;
 
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -17,7 +18,7 @@ import java.util.List;
 
 @SpringBootApplication
 @EnableSwagger2
-public class AgreementApplication {
+public class AgreementApplication implements CommandLineRunner {
 
     public static void main(String[] args) {
         SpringApplication.run(AgreementApplication.class, args);
@@ -37,4 +38,8 @@ public class AgreementApplication {
         return docket;
     }
 
+    @Override
+    public void run(String... args) throws Exception {
+
+    }
 }
